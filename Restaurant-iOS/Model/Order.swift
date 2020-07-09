@@ -1,5 +1,5 @@
 //
-//  Menu.swift
+//  Order.swift
 //  Restaurant-iOS
 //
 //  Created by Viet Pham on 9/7/20.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Menu {
-    let mealName: String
-    let mealDescription: String
-    let mealPrice: Float
+struct Order {
+    var meals: [Meal]
+    let tableNumber: String
+    var status: String
 }
+

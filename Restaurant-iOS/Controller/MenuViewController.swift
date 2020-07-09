@@ -13,9 +13,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let menu = [
-        Menu(mealName: "Pizza", mealDescription: "It's a Pizza", mealPrice: 12.5),
-        Menu(mealName: "Chips", mealDescription: "Cheezzy Chips", mealPrice: 4.5),
-        Menu(mealName: "Fish", mealDescription: "Crunchy Fried Fish", mealPrice: 5.5)
+        Meal(mealName: "Pizza", mealDescription: "It's a Pizza", mealPrice: 12.5),
+        Meal(mealName: "Chips", mealDescription: "Cheezzy Chips", mealPrice: 4.5),
+        Meal(mealName: "Fish", mealDescription: "Crunchy Fried Fish", mealPrice: 5.5)
     ]
     
     
