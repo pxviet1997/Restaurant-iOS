@@ -10,6 +10,7 @@
 		133B96E924B5F2CC00B8D65A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B96E824B5F2CC00B8D65A /* MenuViewController.swift */; };
 		133B96EC24B5FB7B00B8D65A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B96EA24B5FB7B00B8D65A /* MenuTableViewCell.swift */; };
 		133B96ED24B5FB7B00B8D65A /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133B96EB24B5FB7B00B8D65A /* MenuTableViewCell.xib */; };
+		133B96EF24B6AC5A00B8D65A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B96EE24B6AC5A00B8D65A /* Menu.swift */; };
 		13E2BC3C24AAFC0000E46EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2BC3B24AAFC0000E46EC1 /* AppDelegate.swift */; };
 		13E2BC3E24AAFC0000E46EC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2BC3D24AAFC0000E46EC1 /* SceneDelegate.swift */; };
 		13E2BC4024AAFC0000E46EC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2BC3F24AAFC0000E46EC1 /* LoginViewController.swift */; };
@@ -42,6 +43,7 @@
 		133B96E824B5F2CC00B8D65A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		133B96EA24B5FB7B00B8D65A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		133B96EB24B5FB7B00B8D65A /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		133B96EE24B6AC5A00B8D65A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = "Restaurant-iOS/View/Menu.swift"; sourceTree = SOURCE_ROOT; };
 		13E2BC3824AAFC0000E46EC1 /* Restaurant-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E2BC3B24AAFC0000E46EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13E2BC3D24AAFC0000E46EC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		136D494524AC1C10006CE1C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				133B96EE24B6AC5A00B8D65A /* Menu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				13E2BC4024AAFC0000E46EC1 /* LoginViewController.swift in Sources */,
 				133B96E924B5F2CC00B8D65A /* MenuViewController.swift in Sources */,
+				133B96EF24B6AC5A00B8D65A /* Menu.swift in Sources */,
 				133B96EC24B5FB7B00B8D65A /* MenuTableViewCell.swift in Sources */,
 				13E2BC3C24AAFC0000E46EC1 /* AppDelegate.swift in Sources */,
 				13E2BC4624AAFC0000E46EC1 /* Restaurant_iOS.xcdatamodeld in Sources */,
