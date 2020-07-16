@@ -12,5 +12,6 @@ struct Order {
     var meals: [Meal]
     let tableNumber: String
     var status: String
+    var totalCost: Float
 }
 

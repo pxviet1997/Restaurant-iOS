@@ -12,12 +12,9 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let menu = [
-        Meal(mealName: "Pizza", mealDescription: "It's a Pizza", mealPrice: 12.5),
-        Meal(mealName: "Chips", mealDescription: "Cheezzy Chips", mealPrice: 4.5),
-        Meal(mealName: "Fish", mealDescription: "Crunchy Fried Fish", mealPrice: 5.5)
-    ]
+    var menu = [Meal]()
     
+    var dataManager = DataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +25,10 @@ class MenuViewController: UIViewController {
         tableView.delegate = self
         
         tableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        
+        dataManager.delegate = self
+        
+        dataManager.fetchingJSON()
         
     }
     
@@ -59,7 +60,6 @@ extension MenuViewController: UITableViewDataSource {
         let meal = menu[indexPath.section]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MenuTableViewCell
         
-//        cell.label?.text = " HI "
         cell.mealNameLabel?.text = meal.mealName
         cell.mealDescriptionLabel?.text = meal.mealDescription
         cell.mealPriceLabel?.text = "$" + String(meal.mealPrice)
@@ -90,4 +90,12 @@ extension MenuViewController: UITableViewDelegate {
         headerView.backgroundColor = UIColor.clear
         return headerView
     }
+}
+
+extension MenuViewController: DataManagerDelegate {
+    func didFetchData(_ meal: [Meal]) {
+        menu = meal
+    }
+    
+    
 }
