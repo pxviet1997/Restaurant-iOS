@@ -1,0 +1,106 @@
+[
+    {
+        "mealCategory": "PIZZAS",
+        "mealSubCategory": "PREMIUM PIZZAS",
+        "meals":
+        [
+            {
+                "mealName": "REEF, STEAK & BACON",
+                "mealDescription": "Juicy prawns, seasoned steak & crispy rasher bacon, topped with creamy hollandaise sauce & spring onions",
+                "mealPrice": 12.0,
+            },
+            {
+                "mealName": "CHICKEN, BACON & AVOCADO",
+                "mealDescription": "Succulent seasoned chicken, creamy avocado, crispy rasher bacon & red onion, topped with hollandaise sauce & spring onions",
+                "mealPrice": 13.0,
+            },
+        ]
+    },
+    {
+        "mealCategory": "PIZZAS",
+        "mealSubCategory": "TRADINTIONAL PIZZAS",
+        "meals":
+        [
+            {
+                "mealName": "SUPREME",
+                "mealDescription": "Crispy rasher bacon, pepperoni & Italian sausage, topped with fresh mushrooms, capsicum, crumbled beef & juicy pineapple, finished with vibrant spring onions & oregano",
+                "mealPrice": 12.0,
+            },
+            {
+                "mealName": "BBQ MEATLOVERS",
+                "mealDescription": "Crispy rasher bacon, pepperoni pieces, seasoned ground beef, smoky leg ham & Italian sausage, all on a BBQ sauce base",
+                "mealPrice": 12.5,
+            },
+        ]
+    },
+    {
+        
+        "mealCategory": "DRINKS & SHAKES",
+        "mealSubCategory": "SHAKES",
+        "meals":
+        [
+            {
+                "mealName": "MALTED VANILLA THICKSHAKE",
+                "mealDescription": "Handcrafted Malted Vanilla Thickshake made at -14 degrees for the thickest thickshake ever!",
+                "mealPrice": 5.5,
+            },
+            {
+                "mealName": "PEPSI",
+                "mealDescription": "375ml",
+                "mealPrice": 3.5,
+            },
+        ]
+    },
+    {
+        "mealCategory": "SIDES",
+        "mealSubCategory": "SAVOURY SIDES",
+        "meals":
+        [
+            {
+                "mealName": "CHEESE & GARLIC SCROLLS",
+                "mealDescription": "4 freshly baked scrolls filled with tasty mozzarella cheese, drizzled in garlic butter & dusted with parmesan and herb sprinkle",
+                "mealPrice": 6.5,
+            },
+            {
+                   "mealName": "VEGAN CHEESY GARLIC BREAD",
+                   "mealDescription": "Freshly oven-baked herb & garlic bread, topped with vegan cheese & spring onions",
+                   "mealPrice": 7.0,
+            },
+        ]
+    },
+    {
+        "mealCategory": "SIDES",
+        "mealSubCategory": "CHICKEN SIDES",
+        "meals":
+        [
+            {
+                "mealName": "VALUE CHICKEN MEGA BOX",
+                "mealDescription": "A mega box with mega value. 50 pieces of savoury chicken bites, coated in southern-style crumb.",
+                "mealPrice": 8.0,
+            },
+            {
+                "mealName": "SOUTHERN FRIED CHICKEN BITES (20PK)",
+                "mealDescription": "20 pieces of 100% chicken breast, lightly coated with spicy golden crumbing. Served with ranch dipping sauce",
+                "mealPrice": 6.5,
+            },
+        ]
+    },
+    {
+        "mealCategory": "DESSERTS",
+        "mealSubCategory": "DESSERTS",
+        "meals":
+        [
+            {
+                "mealName": "MINI DUTCH PANCAKES",
+                "mealDescription": "12 pack of Mini Dutch Pancakes, dusted with icing sugar",
+                "mealPrice": 3.5,
+            },
+            {
+                "mealName": "SALTED CARAMEL CHOCOLATE MOUSSE",
+                "mealDescription": "Rich creamy Chocolate mousse with gooey, salted caramel sauce",
+                "mealPrice": 3.5,
+            },
+        ]
+    }
+    
+]
