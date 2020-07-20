@@ -32,10 +32,18 @@ class MenuTableViewCell: UITableViewCell {
         addButton.layer.cornerRadius = 7
         addButton.clipsToBounds = true
         
+//        stackView.bounds = stackView.frame.insetBy(dx: 0, dy: 0)
+    
     }
     
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        //set the values for top,left,bottom,right margins
+//        let margins = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+//        contentView.frame = contentView.frame.inset(by: margins)
+//    }
+    
     @IBAction func addButtonPressed(_ sender: UIButton) {
-        print("haha")
         sender.alpha = 0.5
 
         //Code should execute after 0.2 second delay.

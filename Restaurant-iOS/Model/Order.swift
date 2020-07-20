@@ -9,7 +9,7 @@
 import Foundation
 
 struct Order {
-    var meals: [Meal]
+    var meals: [MealByCategory]
     let tableNumber: String
     var status: String
     var totalCost: Float

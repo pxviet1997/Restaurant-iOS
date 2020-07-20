@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -106,6 +106,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="addButton" destination="2WZ-Lf-HOP" id="3dt-BA-Srg"/>
+                <outlet property="contentView" destination="H2p-sc-9uM" id="njZ-1U-UhE"/>
                 <outlet property="mealDescriptionLabel" destination="kYg-gQ-w3q" id="BLZ-BT-5J1"/>
                 <outlet property="mealNameLabel" destination="cbO-6X-ot6" id="ipy-2g-bQR"/>
                 <outlet property="mealPriceLabel" destination="1Kj-Mv-arw" id="cK2-bR-SDf"/>

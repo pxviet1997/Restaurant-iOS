@@ -8,10 +8,14 @@
 
 import Foundation
 
+struct MealByCategory: Codable {
+    let mealCategory: String
+    let mealSubCategory: String
+    let meals: [Meal]
+}
+
 struct Meal: Codable {
     let mealName: String
     let mealDescription: String
     let mealPrice: Float
-    let mealCategory: String
-    let mealSubCategory: String
 }

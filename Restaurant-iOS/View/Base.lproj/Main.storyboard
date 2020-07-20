@@ -95,44 +95,61 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypF-gP-RAg">
-                                        <rect key="frame" x="0.0" y="0.0" width="493" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="536" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-4N-k0L">
-                                                <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                                <state key="normal" title="Pizzas"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-hz-pXE">
-                                                <rect key="frame" x="99" y="0.0" width="115" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                                <state key="normal" title="Sides"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze8-Xm-IUI">
-                                                <rect key="frame" x="214" y="0.0" width="149" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                                <state key="normal" title="Drinks &amp; Shakes"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pux-j6-R9f">
-                                                <rect key="frame" x="363" y="0.0" width="130" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                                                <state key="normal" title="Desserts"/>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zKT-So-TEh">
+                                                <rect key="frame" x="0.0" y="0.0" width="536" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-4N-k0L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="134" height="50"/>
+                                                        <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                        <state key="normal" title="Pizzas"/>
+                                                        <connections>
+                                                            <action selector="pizzasCategoryPressed:" destination="e32-CD-wLN" eventType="touchUpInside" id="0pr-VD-m6e"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-hz-pXE">
+                                                        <rect key="frame" x="134" y="0.0" width="134" height="50"/>
+                                                        <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                        <state key="normal" title="Sides"/>
+                                                        <connections>
+                                                            <action selector="sidesCategoryPressed:" destination="e32-CD-wLN" eventType="touchUpInside" id="tb5-q2-3gF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze8-Xm-IUI">
+                                                        <rect key="frame" x="268" y="0.0" width="134" height="50"/>
+                                                        <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                        <state key="normal" title="Drinks &amp; Shakes"/>
+                                                        <connections>
+                                                            <action selector="drinksCategoryPressed:" destination="e32-CD-wLN" eventType="touchUpInside" id="XNQ-mf-h1l"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pux-j6-R9f">
+                                                        <rect key="frame" x="402" y="0.0" width="134" height="50"/>
+                                                        <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                                        <state key="normal" title="Desserts"/>
+                                                        <connections>
+                                                            <action selector="dessertsCategoryPressed:" destination="e32-CD-wLN" eventType="touchUpInside" id="byV-A0-wqm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="493" id="bAW-bG-fUA"/>
+                                            <constraint firstItem="zKT-So-TEh" firstAttribute="top" secondItem="ypF-gP-RAg" secondAttribute="top" id="1CZ-VW-8CK"/>
+                                            <constraint firstAttribute="bottom" secondItem="zKT-So-TEh" secondAttribute="bottom" id="CG1-aN-bkX"/>
+                                            <constraint firstItem="zKT-So-TEh" firstAttribute="leading" secondItem="ypF-gP-RAg" secondAttribute="leading" id="ECp-Et-erO"/>
+                                            <constraint firstAttribute="trailing" secondItem="zKT-So-TEh" secondAttribute="trailing" id="eeV-eS-0Y0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="ypF-gP-RAg" firstAttribute="width" secondItem="l30-RW-Xcm" secondAttribute="width" multiplier="1.31467" priority="250" id="6jp-dr-h6l"/>
                                     <constraint firstItem="ypF-gP-RAg" firstAttribute="top" secondItem="y0V-M4-VdM" secondAttribute="top" id="OLV-y5-YSC"/>
                                     <constraint firstItem="ypF-gP-RAg" firstAttribute="bottom" secondItem="y0V-M4-VdM" secondAttribute="bottom" id="XgR-V5-jeX"/>
                                     <constraint firstItem="ypF-gP-RAg" firstAttribute="trailing" secondItem="y0V-M4-VdM" secondAttribute="trailing" id="fvq-yw-anw"/>

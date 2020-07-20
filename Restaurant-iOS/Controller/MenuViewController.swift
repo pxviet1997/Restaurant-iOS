@@ -12,7 +12,7 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var menu = [Meal]()
+    var menu = [MealByCategory]()
     
     var dataManager = DataManager()
     
@@ -42,6 +42,30 @@ class MenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func pizzasCategoryPressed(_ sender: UIButton) {
+        loadCategory(category: sender.titleLabel!.text!)
+    }
+    
+    @IBAction func sidesCategoryPressed(_ sender: UIButton) {
+        loadCategory(category: sender.titleLabel!.text!)
+    }
+    
+    @IBAction func drinksCategoryPressed(_ sender: UIButton) {
+        loadCategory(category: sender.titleLabel!.text!)
+    }
+    
+    @IBAction func dessertsCategoryPressed(_ sender: UIButton) {
+        loadCategory(category: sender.titleLabel!.text!)
+    }
+    
+    func loadCategory(category: String) {
+        dataManager.fetchingJSON(category: category)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
+    }
 
 }
 
@@ -52,48 +76,56 @@ extension MenuViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return menu[section].meals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let meal = menu[indexPath.section]
+        let meal = menu[indexPath.section].meals[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MenuTableViewCell
         
         cell.mealNameLabel?.text = meal.mealName
         cell.mealDescriptionLabel?.text = meal.mealDescription
         cell.mealPriceLabel?.text = "$" + String(meal.mealPrice)
         
-        cell.layer.cornerRadius = 17
-        cell.clipsToBounds = true
+        
+//        cell.layer.cornerRadius = 17
+//        cell.clipsToBounds = true
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return menu[section].mealSubCategory
+    }
     
 }
 
 extension MenuViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return 200
-    
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        return 30
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor.clear
-        return headerView
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UITableViewHeaderFooterView()
+//        let label = UILabel()
+//        label.text = menu[section].mealSubCategory
+//
+//        headerView.addSubview(label)
+//
+//        return headerView
+//    }
+ 
+    
 }
 
 extension MenuViewController: DataManagerDelegate {
-    func didFetchData(_ meal: [Meal]) {
+    func didFetchData(_ meal: [MealByCategory]) {
         menu = meal
     }
     

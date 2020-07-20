@@ -12,7 +12,9 @@ struct DataManager {
     
     var delegate: DataManagerDelegate?
     
-    func fetchingJSON() {
+    func fetchingJSON(category: String = "Pizzas") {
+        var menuByCategory = [MealByCategory]()
+        
         guard let path = Bundle.main.path(forResource: "Meal", ofType: "json") else { return }
         
         let url = URL(fileURLWithPath: path)
@@ -21,8 +23,13 @@ struct DataManager {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             
-            let menu = try decoder.decode([Meal].self, from: data)
-            self.delegate?.didFetchData(menu)
+            let menu = try decoder.decode([MealByCategory].self, from: data)
+            for meal in menu {
+                if meal.mealCategory.lowercased() == category.lowercased() {
+                    menuByCategory.append(meal)
+                }
+            }
+            self.delegate?.didFetchData(menuByCategory)
             
         } catch {
             print("\(error)")
@@ -32,5 +39,5 @@ struct DataManager {
 }
 
 protocol DataManagerDelegate {
-    func didFetchData(_ meal: [Meal])
+    func didFetchData(_ meal: [MealByCategory])
 }
