@@ -51,6 +51,15 @@ class MenuTableViewCell: UITableViewCell {
             //Bring's sender's opacity back up to fully opaque.
             sender.alpha = 1.0
         }
+        
+        let mealName = mealNameLabel.text!
+        let mealDescription = mealDescriptionLabel.text!
+        let mealPrice = Float(mealPriceLabel.text!)!
+        
+        let meal = Meal(mealName: mealName, mealDescription: mealDescription, mealPrice: mealPrice)
+        
+        
+        
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {

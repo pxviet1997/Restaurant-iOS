@@ -14,6 +14,7 @@
 		13675E6A24BEA13C00CC89BF /* Meal.json in Resources */ = {isa = PBXBuildFile; fileRef = 13675E6924BEA13B00CC89BF /* Meal.json */; };
 		13675E6C24BEA16900CC89BF /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675E6B24BEA16900CC89BF /* Meal.swift */; };
 		13675E6E24C0131F00CC89BF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675E6D24C0131F00CC89BF /* DataManager.swift */; };
+		13D51F4224C7C9A5004F97C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D51F4124C7C9A5004F97C1 /* TableViewController.swift */; };
 		13E2BC3C24AAFC0000E46EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2BC3B24AAFC0000E46EC1 /* AppDelegate.swift */; };
 		13E2BC3E24AAFC0000E46EC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2BC3D24AAFC0000E46EC1 /* SceneDelegate.swift */; };
 		13E2BC4024AAFC0000E46EC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2BC3F24AAFC0000E46EC1 /* LoginViewController.swift */; };
@@ -50,6 +51,7 @@
 		13675E6924BEA13B00CC89BF /* Meal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Meal.json; sourceTree = "<group>"; };
 		13675E6B24BEA16900CC89BF /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		13675E6D24C0131F00CC89BF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		13D51F4124C7C9A5004F97C1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		13E2BC3824AAFC0000E46EC1 /* Restaurant-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E2BC3B24AAFC0000E46EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13E2BC3D24AAFC0000E46EC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				13E2BC3F24AAFC0000E46EC1 /* LoginViewController.swift */,
 				133B96E824B5F2CC00B8D65A /* MenuViewController.swift */,
+				13D51F4124C7C9A5004F97C1 /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				13E2BC4024AAFC0000E46EC1 /* LoginViewController.swift in Sources */,
 				133B96E924B5F2CC00B8D65A /* MenuViewController.swift in Sources */,
 				133B96F224B72FA200B8D65A /* Order.swift in Sources */,
+				13D51F4224C7C9A5004F97C1 /* TableViewController.swift in Sources */,
 				133B96EC24B5FB7B00B8D65A /* MenuTableViewCell.swift in Sources */,
 				13675E6C24BEA16900CC89BF /* Meal.swift in Sources */,
 				13E2BC3C24AAFC0000E46EC1 /* AppDelegate.swift in Sources */,
