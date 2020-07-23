@@ -101,6 +101,7 @@
 				133B96F124B72FA200B8D65A /* Order.swift */,
 				13675E6B24BEA16900CC89BF /* Meal.swift */,
 				13675E6D24C0131F00CC89BF /* DataManager.swift */,
+				13E2BC4424AAFC0000E46EC1 /* Restaurant_iOS.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,7 +157,6 @@
 				13E2BC4724AAFC0500E46EC1 /* Assets.xcassets */,
 				13E2BC4924AAFC0500E46EC1 /* LaunchScreen.storyboard */,
 				13E2BC4C24AAFC0500E46EC1 /* Info.plist */,
-				13E2BC4424AAFC0000E46EC1 /* Restaurant_iOS.xcdatamodeld */,
 			);
 			path = "Restaurant-iOS";
 			sourceTree = "<group>";
